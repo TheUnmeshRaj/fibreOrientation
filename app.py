@@ -7,18 +7,18 @@ import torch.nn as nn
 from PIL import Image
 from torchvision import models, transforms
 
-
-# Load model (cached)
+num_classes = 2  
 @st.cache_resource
 def load_model():
     model = models.resnet18(pretrained=False)
-    model.fc = nn.Linear(model.fc.in_features, 4)
-    model.load_state_dict(torch.load("model.pth", map_location='cpu'))
+    model.fc = nn.Linear(model.fc.in_features, num_classes)
+    model.load_state_dict(torch.load("model1.pth", map_location='cpu'))
     model.eval()
     return model
 
 model = load_model()
-class_names = ["angle_plied", "cross_plied", "longitudinal", "transverse"]
+class_names = ['bidirectional','unidirectional']
+
 transform = transforms.Compose([
     transforms.Resize((224, 224)),
     transforms.ToTensor(),
