@@ -16,7 +16,7 @@ st.set_page_config(
     layout="centered"
 )
 
-NUM_CLASSES = 2  # Note: This seems inconsistent with 4 class names below
+NUM_CLASSES = 4  # Note: This seems inconsistent with 4 class names below
 CLASS_NAMES = ['bidirectional', 'multidirectional', 'random', 'unidirectional']
 
 PROPERTIES_MAP = {
@@ -44,6 +44,18 @@ PROPERTIES_MAP = {
             "Moisture Absorption": "Equilibrium moisture content: 0.8-1.2% at 95% RH (vinyl ester).",
             "Cost Factor": "$45-75/m² for industrial-grade glass fiber fabrics.",
             "Typical Fiber Volume Fraction": "55±3% with interlaminar shear strength >70 MPa"
+        },
+        {
+            "Orientation Pattern": "Quasi-isotropic balanced weave with minor off-axis reinforcement.",
+            "Mechanical Behavior": "Enhanced off-axis strength and improved torsional rigidity.",
+            "Thermal Stability": "CTE: 5-7 ppm/°C in-plane, minimal out-of-plane warping.",
+            "Fatigue Resistance": "Improved off-axis fatigue life compared to pure cross-ply.",
+            "Impact Resistance": "CAI strength: 220-270 MPa for 6 mm thick laminates.",
+            "Manufacturing Process": "Hand layup or semi-automated fiber placement.",
+            "Application Insight": "Automotive chassis components and drone airframes.",
+            "Moisture Absorption": "0.3-0.6% weight gain in 85% RH (polyester resin).",
+            "Cost Factor": "$65-100/m² for hybrid carbon-glass fabrics.",
+            "Typical Fiber Volume Fraction": "50±4% with good surface finish"
         }
     ],
     "multidirectional": [
@@ -58,6 +70,30 @@ PROPERTIES_MAP = {
             "Moisture Absorption": "Reduced edge effects: 0.3-0.6% weight gain (BMI resin systems).",
             "Cost Factor": "$150-250/m² for complex 3D woven architectures.",
             "Typical Fiber Volume Fraction": "50±4% with enhanced delamination resistance"
+        },
+        {
+            "Orientation Pattern": "0°, ±30°, ±60°, and 90° fiber orientations for enhanced isotropy.",
+            "Mechanical Behavior": "Near-isotropic stiffness and strength in all in-plane directions.",
+            "Thermal Stability": "CTE: 3-5 ppm/°C, minimal thermal distortion.",
+            "Fatigue Resistance": "Excellent crack propagation resistance due to complex load paths.",
+            "Impact Resistance": "Energy absorption: 70-110 J for 4 mm panels, improved delamination resistance.",
+            "Manufacturing Process": "Automated fiber placement (AFP) with multiple-axis tow steering.",
+            "Application Insight": "Rotorcraft fuselage and satellite structures.",
+            "Moisture Absorption": "0.4-0.8% weight gain in humid environments (epoxy or BMI).",
+            "Cost Factor": "$180-300/m² for advanced multidirectional preforms.",
+            "Typical Fiber Volume Fraction": "48±5% with optimized through-thickness properties"
+        },
+        {
+            "Orientation Pattern": "Multi-layered with 0°, ±45°, and 90° plies for tailored properties.",
+            "Mechanical Behavior": "Tailorable stiffness and strength for specific loading conditions.",
+            "Thermal Stability": "CTE: 2-6 ppm/°C depending on ply sequence and resin system.",
+            "Fatigue Resistance": "Superior damage tolerance and crack arrest capabilities.",
+            "Impact Resistance": "CAI strength: 90-140 MPa for 8 mm thick laminates.",
+            "Manufacturing Process": "Prepreg layup with autoclave consolidation.",
+            "Application Insight": "Marine hulls and high-performance sporting goods.",
+            "Moisture Absorption": "0.5-1.0% weight gain in 95% RH (epoxy or vinylester).",
+            "Cost Factor": "$120-200/m² for custom multidirectional laminates.",
+            "Typical Fiber Volume Fraction": "52±4% with excellent interlaminar toughness"
         }
     ],
     "random": [
@@ -72,6 +108,30 @@ PROPERTIES_MAP = {
             "Moisture Absorption": "Higher absorption: 1.2-2.0% due to fiber-matrix interface effects.",
             "Cost Factor": "$25-45/m² for chopped strand mat configurations.",
             "Typical Fiber Volume Fraction": "30±5% with emphasis on surface finish quality"
+        },
+        {
+            "Orientation Pattern": "Random long fiber orientation with partial alignment.",
+            "Mechanical Behavior": "Higher strength than short fiber, but still isotropic.",
+            "Thermal Stability": "Isotropic CTE: 10-20 ppm/°C, improved over short fiber.",
+            "Fatigue Resistance": "Enhanced fatigue life due to longer fiber length.",
+            "Impact Resistance": "Energy absorption: 50-80 J for 25 mm impactor on 4 mm panels.",
+            "Manufacturing Process": "Long fiber injection molding (LFT).",
+            "Application Insight": "Automotive structural components and appliance housings.",
+            "Moisture Absorption": "1.0-1.5% weight gain in humid environments.",
+            "Cost Factor": "$30-55/m² for long fiber thermoplastics.",
+            "Typical Fiber Volume Fraction": "35±5% with good mechanical properties"
+        },
+        {
+            "Orientation Pattern": "Random fiber with surface veil for improved aesthetics and corrosion resistance.",
+            "Mechanical Behavior": "Surface properties enhanced, core remains isotropic.",
+            "Thermal Stability": "CTE: 18-28 ppm/°C, surface veil reduces thermal distortion.",
+            "Fatigue Resistance": "Surface veil can reduce crack initiation.",
+            "Impact Resistance": "Energy absorption: 40-70 J for 4 mm panels.",
+            "Manufacturing Process": "Sheet molding compound (SMC) with surface veil.",
+            "Application Insight": "Bathroom fixtures, truck panels, and decorative surfaces.",
+            "Moisture Absorption": "1.0-1.8% weight gain, surface veil reduces moisture ingress.",
+            "Cost Factor": "$35-60/m² for SMC with surface veil.",
+            "Typical Fiber Volume Fraction": "32±5% with excellent surface finish"
         }
     ],
     "unidirectional": [
@@ -98,6 +158,30 @@ PROPERTIES_MAP = {
             "Moisture Absorption": "Matrix-dependent: 0.05-0.3% for thermoplastic matrices.",
             "Cost Factor": "$80-150/m² for high-modulus carbon fiber systems.",
             "Typical Fiber Volume Fraction": "60±3% with optimized fiber packing density"
+        },
+        {
+            "Orientation Pattern": "Unidirectional with minor off-axis stabilization fibers.",
+            "Mechanical Behavior": "Retains high longitudinal strength, improved transverse properties.",
+            "Thermal Stability": "CTE: 1 ppm/°C (longitudinal), 25 ppm/°C (transverse).",
+            "Fatigue Resistance": "Enhanced transverse fatigue resistance, >10⁷ cycles longitudinal.",
+            "Impact Resistance": "Improved delamination resistance, impact strength: 20-35 kJ/m².",
+            "Manufacturing Process": "Automated tape placement with stabilization stitching.",
+            "Application Insight": "Aircraft wing spars and high-performance bicycle frames.",
+            "Moisture Absorption": "0.2% (longitudinal), 0.6% (transverse) for stabilized systems.",
+            "Cost Factor": "$90-130/m² for stabilized unidirectional preforms.",
+            "Typical Fiber Volume Fraction": "62±3% with good handling characteristics"
+        },
+        {
+            "Orientation Pattern": "Hybrid unidirectional with high-strength and high-modulus fibers.",
+            "Mechanical Behavior": "Ultra-high longitudinal stiffness and strength, tailored properties.",
+            "Thermal Stability": "CTE: 0.3-0.7 ppm/°C (longitudinal), 28-32 ppm/°C (transverse).",
+            "Fatigue Resistance": "Exceptional fatigue resistance in primary load direction.",
+            "Impact Resistance": "Transverse impact strength: 18-30 kJ/m² with hybrid fibers.",
+            "Manufacturing Process": "Hybrid tow placement with advanced resin systems.",
+            "Application Insight": "Spacecraft structures and high-end sporting equipment.",
+            "Moisture Absorption": "0.1-0.2% (longitudinal), 0.7% (transverse) for hybrid systems.",
+            "Cost Factor": "$140-220/m² for hybrid unidirectional architectures.",
+            "Typical Fiber Volume Fraction": "63±2% with superior performance"
         }
     ]
 }
@@ -113,7 +197,7 @@ def load_model():
     try:
         model = models.resnet18(pretrained=False)
         model.fc = nn.Linear(model.fc.in_features, NUM_CLASSES)
-        model.load_state_dict(torch.load("model1.pth", map_location='cpu'))
+        model.load_state_dict(torch.load("best.pth", map_location='cpu'))
         model.eval()
         return model
     except FileNotFoundError:
