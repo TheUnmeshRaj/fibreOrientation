@@ -1,2 +1,9 @@
 torch 
 torchvision
+streamlit
+pillow
+opencv-python
+scikit-image
+numpy
+grad-cam
+pytorch-grad-cam
