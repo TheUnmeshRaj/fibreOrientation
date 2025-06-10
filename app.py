@@ -285,11 +285,11 @@ st.markdown(
     .main {
         background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #222222;
+        color: #111111;
     }
     .stButton > button {
         background-color: #005f73;
-        color: white;
+        color: #ffffff;
         border-radius: 8px;
         height: 40px;
         width: 150px;
@@ -304,7 +304,8 @@ st.markdown(
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     .metric-card {
-        background: white;
+        background: #f8f9fa;
+        color: #212529;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -312,7 +313,7 @@ st.markdown(
     }
     .prediction-result {
         background: linear-gradient(90deg, #00b4d8, #0077b6);
-        color: white;
+        color: #ffffff;
         padding: 20px;
         border-radius: 15px;
         text-align: center;
