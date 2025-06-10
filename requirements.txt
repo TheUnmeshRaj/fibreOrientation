@@ -1,9 +1,8 @@
-torch 
-torchvision
-streamlit
-pillow
-opencv-python
-scikit-image
-numpy
-grad-cam
-pytorch-grad-cam
+torch==2.7.1
+torchvision==0.22.1
+streamlit==1.45.1
+Pillow==11.2.1
+opencv-python==4.11.0
+scikit-image==0.25.2
+numpy==2.2.6
+scipy==1.12.2
